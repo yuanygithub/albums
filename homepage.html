@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>深圳市南山区知识产权促进中心</title>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <script language="javascript" src="js/jquery.js"></script>
+    <script language="javascript">
+        $(function() {
+        setBtns($(".list-zcbh-item,.list-zcbh1-item,.list-zcyy-item,.right-tools-item"));
+
+        setTabs($(".list-pad-zcbh .list-pad-title-tabs a"),$(".list-zcbh"),$(".list-zcbh1"),".list-zcbh-item");
+        setTabs($(".list-pad-zcyy .list-pad-title-tabs a"),$(".list-zcyy"),$(".list-zcyy1"),".list-zcyy-item");
+      });
+
+      function setBtns(btnObj){
+        btnObj.hover(function() {
+            $(this).children(".list-zcbh-2").show().addClass("animated flipInY");
+            $(this).children(".list-zcbh-1").removeClass("flipInY").hide();
+        });
+
+        btnObj.mouseleave(function() {
+            $(this).children(".list-zcbh-1").show().addClass("animated flipInY");
+            $(this).children(".list-zcbh-2").removeClass("flipInY").hide();
+        });
+      }
+
+      function setTabs(tabsObj,obj1,obj2,strChild){
+        tabsObj.first().click(function(){
+          tabsObj.removeClass("current");
+          $(this).addClass("current");
+          obj1.show().addClass("animated bounceInLeft").children(strChild).addClass("animated flipInY");
+          obj2.removeClass("bounceInRight").hide().children("ul li").removeClass("flipInY");
+        });
+
+        tabsObj.last().click(function(){
+          tabsObj.removeClass("current");
+          $(this).addClass("current");
+          obj1.removeClass("bounceInLeft").hide().children(strChild).removeClass("flipInY");
+          obj2.show().addClass("animated bounceInRight").children("ul li").addClass("animated flipInY");
+        });
+      }
+    </script>
+</head>
+
+<body>
+    <div class="right-tools">
+        <div class="right-tools-item">
+            <div class="list-zcbh-1">
+                <img src="images\homepage\right-tools-ico1.png" />
+      </div>
+                <div class="list-zcbh-2">
+                    <a href="#">预约<br />业务</a>
+                </div>
+            </div>
+            <div class="right-tools-item">
+                <div class="list-zcbh-1">
+                    <img src="images\homepage\right-tools-ico2.png" />
+      </div>
+                    <div class="list-zcbh-2">
+                        <a href="#">知产<br />检索</a>
+                    </div>
+                </div>
+                <div class="right-tools-item">
+                    <div class="list-zcbh-1">
+                        <img src="images\homepage\right-tools-ico3.png" />
+      </div>
+                        <div class="list-zcbh-2">
+                            <a href="#">公共空<br />间申请</a>
+                        </div>
+                    </div>
+                    <div class="right-tools-item">
+                        <div class="list-zcbh-1">
+                            <img src="images\homepage\right-tools-ico4.png" />
+      </div>
+                            <div class="list-zcbh-2">
+                                <a href="#">分析<br />报告</a>
+                            </div>
+                        </div>
+                        <div class="right-tools-item">
+                            <div class="list-zcbh-1">
+                                <img src="images\homepage\right-tools-ico5.png" />
+      </div>
+                                <div class="list-zcbh-2">
+                                    <a href="#">投诉<br />建议</a>
+                                </div>
+                            </div>
+                            <div class="right-tools-item">
+                                <div class="list-zcbh-1">
+                                    <img src="images\homepage\right-tools-ico6.png" />
+      </div>
+                                    <div class="list-zcbh-2">
+                                        <a href="javascript:scrollTo(0,0);">页面<br />顶部</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-part">
+                                <div class="header">
+                                    <div class="topBar">
+                                        <div class="topBar-left">
+                                            <div class="sysName"><img src="images\homepage\sysLogo.png" />深圳市<span>南山区</span>知识产权促进中心</div>
+                                            <div class="topNav">
+                                                <ul>
+                                                    <li class="current"><a href="#">首页</a></li>
+                                                    <li><a href="#">知产保护</a></li>
+                                                    <li><a href="#">知产运营</a></li>
+                                                    <li><a href="#">知产学习</a></li>
+                                                    <li><a href="Center_introduction.html">中心介绍</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="topBar-right">
+                                            <div class="topTools">
+                                                <a href="register.html"><img src="images\homepage\ico-user.png" />注册</a>
+                                                <a href="login.html">登录</a>
+                                                <a href="#"><img src="images\homepage\ico-mobile.png" />手机端</a>
+                                                <a href="Usercenter-information.html" target="_blank"><img src="images\homepage\ico-help.png" />新手帮助</a>
+                                            </div>
+                                            <div class="top-search">
+                                                <input type="text" class="search-input" /><input type="button" class="icon-search" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-news">
+                                    <div class="pic-news">
+                                        <div class="pic-news-title">
+                                            <a href="#"  class="pic-news-title-txt">市领导到中心考察指导</a>
+                                            <div class="pic-news-switching">
+                                                <a href="#" class="current"></a>
+                                                <a href="#"></a>
+                                                <a href="#"></a>
+                                                <a href="#"></a>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <img src="images\homepage\pic1.png" />
+        </div>
+                                        <div class="top-btns">
+                                            <a href="functional_department.html"  target="_blank" class="top-btn-item"><img src="images\homepage\ico-znjg.png" />职能机构</a>
+                                            <a href="#" class="top-btn-item"><img src="images\homepage\ico-lmzj.png" />联盟专家</a>
+                                            <a href="#" class="top-btn-item"><img src="images\homepage\ico-zcfc.png" />政策扶持</a>
+                                            <a href="#" class="top-btn-item"><img src="images\homepage\ico-zthd.png" />专题活动</a>
+                                        </div>
+                                    </div>
+                                    <div class="top-nav-banner">
+                                        <a href="#"><img src="images\homepage\btn-wyc-ico.png" /><span>我要查</span></a>
+                                        <a href="#"><img src="images\homepage\btn-wyx-ico.png" /><span>我要学</span></a>
+                                        <a href="#"><img src="images\homepage\btn-wyb-ico.png" /><span>我要办</span></a>
+                                        <a href="#"><img src="images\homepage\btn-wyw-ico.png" /><span>我要问</span></a>
+                                    </div>
+                                </div>
+                                <div class="notice-pad">
+                                    <a href="notice.html" target="_blank" class="notice-title">通知公告：</a>
+                                    <marquee id="m1" behavior="scroll" direction="up" scrollamount="2" onmouseover="m1.stop();" onmouseout="m1.start();">
+                                        <div>
+                                            <a href="notice.html" target="_blank" class="notice-txt" title="深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知">深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知<span class="notice-date">[2019-04-06]</span></a>
+                                        </div>
+                                        <div>
+                                            <a href="notice.html" target="_blank" class="notice-txt" title="深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知">深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知2<span class="notice-date">[2019-04-06]</span></a>
+                                        </div>
+                                        <div>
+                                            <a href="notice.html" target="_blank" class="notice-txt" title="深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知">深圳市市场监督管理局关于举办知识产权许可与谈判高级培训的通知3<span class="notice-date">[2019-04-06]</span></a>
+                                        </div>
+                                    </marquee>
+                                </div>
+                                <div class="list-pad  list-pad-zcbh">
+                                    <div class="list-pad-title">
+                                        <div class="list-pad-title-label">知产保护</div>
+                                        <div class="list-pad-title-tabs">
+                                            <a class="current">业务分类</a><a>机构分类</a>
+                                        </div>
+                                    </div>
+                                    <div class="list-zcbh1">
+                                        <ul>
+                                            <li>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_41.png" />
+                                                        <span>深圳市经侦局</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>深圳市经侦局</div>
+                                                        <a href="#">刑事报案&gt;&gt;</a>
+                                                        <a href="#">警示谈话&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_41.png" />
+                                                        <span>南山公安分局</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>南山公安分局</div>
+                                                        <a href="#">刑事报案&gt;&gt;</a>
+                                                        <a href="#">警示谈话&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_31.png" />
+                                                        <span>南山区人民法院</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>南山区人民法院</div>
+                                                        <a href="#">知产诉讼&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_09.png" />
+                                                        <span>南山公证处</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>南山公证处</div>
+                                                        <a href="#">公证申请&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_49.png" />
+                                                        <span>深圳市市场监管局南山分局</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">深圳市市场监管局南山分局</div>
+                                                        <a href="#">行政举报&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_26.png" />
+                                                        <span>南山区人民检察院</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>南山区人民检察院</div>
+                                                        <a href="#">警示谈话&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_34.png" />
+                                                        <span>深圳国际仲裁院（深圳仲裁委员会）</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">深圳国际仲裁院（深圳仲裁委员会）</div>
+                                                        <a href="#">知产仲裁&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_56.png" />
+                                                        <span>智高点</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>智高点</div>
+                                                        <a href="#">商标预警&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_25.png" />
+                                                        <span>美国布林克斯律师事务所深圳代表处</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">美国布林克斯律师事务所深圳代表处</div>
+                                                        <a href="#">法律援助&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_24.png" />
+                                                        <span>良马律所</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>良马律所</div>
+                                                        <a href="#">法律援助&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_07.png" />
+                                                        <span>北京市盈科（深圳）律师事务所</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">北京市盈科（深圳）律师事务所</div>
+                                                        <a href="#">法律援助&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_65.png" />
+                                                        <span>中珍银花（北京）知识产权代理有限公司</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">中珍银花（北京）知识产权代理有限公司</div>
+                                                        <a href="#">法律援助&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_03.png" />
+                                                        <span>广东安络司法鉴定所</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2 aLh1">
+                                                        <div>广东安络司法鉴定所</div>
+                                                        <a href="#">综合预警&gt;&gt;</a>
+                                                        <a href="#">综合鉴定&gt;&gt;</a>
+                                                        <a href="#">综合存证&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_05.png" />
+                                                        <span>广东安证计算机司法鉴定所</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">广东安证计算机司法鉴定所</div>
+                                                        <a href="#">综合鉴定&gt;&gt;</a>
+                                                        <a href="#">综合存证&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_18.png" />
+                                                        <span>海域网</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>海域网</div>
+                                                        <a href="#">域名保护&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_72.png" />
+                                                        <span>微在科技</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>微在科技</div>
+                                                        <a href="#">法律援助&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                             <li>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_40.png" />
+                                                        <span>深圳市版权协会</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">深圳市版权协会</div>
+                                                        <a href="#">行业组织&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_55.png" />
+                                                        <span>深圳市专利协会</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>深圳市专利协会</div>
+                                                        <a href="#">行业组织&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_48.png" />
+                                                        <span>深圳市商标协会</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">深圳市商标协会</div>
+                                                        <a href="#">行业组织&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_50.png" />
+                                                        <span>深圳市中小企业发展促进会</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div class="lh1">深圳市中小企业发展促进会</div>
+                                                        <a href="#">行业组织&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-zcbh">
+                                        <div id="test-zcbh-item" class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-1.png" />
+                                                <span>举报维权</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>举报维权</div>
+                                                <a href="step1.html"  target="_blank">刑事报案&gt;&gt;</a>
+                                                <a href="step1.html"  target="_blank">行政举报&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-2.png" />
+                                                <span>预警存证</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>预警存证</div>
+                                                <a href="#">商标预警&gt;&gt;</a>
+                                                <a href="#">综合预警&gt;&gt;</a>
+                                                <a href="#">版权存证&gt;&gt;</a>
+                                                <a href="#">综合存证&gt;&gt;</a>
+                                                <a href="#">综合鉴定&gt;&gt;</a>
+                                                <a href="#">域名保护&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-3.png" />
+                                                <span>仲裁诉讼</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>仲裁诉讼</div>
+                                                <a href="#">资产仲裁&gt;&gt;</a>
+                                                <a href="#">资产诉讼&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-4.png" />
+                                                <span>司法公证</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>司法公证</div>
+                                                <a href="#">公证申请&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-5.png" />
+                                                <span>法律援助</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>法律援助</div>
+                                                <a href="#">援助申请&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcbh-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\pic-zcbh-6.png" />
+                                                <span>警示谈话</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>警示谈话</div>
+                                                <a href="#">谈话申请&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-pad list-pad-zcyy">
+                                    <div class="list-pad-title">
+                                        <div class="list-pad-title-label">知产运营</div>
+                                        <div class="list-pad-title-tabs">
+                                            <a class="current">业务分类</a><a>机构分类</a>
+                                        </div>
+                                    </div>
+                                    <div class="list-zcyy1">
+                                        <ul> 
+                                            <li> 
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_normal.png" />
+                                                        <span>南山区知识产权联盟</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>南山区知识产权联盟</div>
+                                                        <a href="#">社会团体&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_17.png" />
+                                                        <span>国新南方</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>国新南方</div>
+                                                        <a href="#">综合方案&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_23.png" />
+                                                        <span>华夏泰和</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>华夏泰和</div>
+                                                        <a href="#">综合方案&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_15.png" />
+                                                        <span>三环代理</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>三环代理</div>
+                                                        <a href="#">代理业务&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_39.png" />
+                                                        <span>青年代理</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>青年代理</div>
+                                                        <a href="#">代理业务&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_64.png" />
+                                                        <span>中兴达</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>中兴达</div>
+                                                        <a href="#">金融平台&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_58.png" />
+                                                        <span>平安保险</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>平安保险</div>
+                                                        <a href="#">保险平台&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_33.png" />
+                                                        <span>科易网</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>科易网</div>
+                                                        <a href="#">技术转移&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_63.png" />
+                                                        <span>中细软公司</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>中细软公司</div>
+                                                        <a href="#">技术转移&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_66.png" />
+                                                        <span>中知认证</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>中知认证</div>
+                                                        <a href="#">贯标认证&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_47.png" />
+                                                        <span>七号网</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>七号网</div>
+                                                        <a href="#">贯标认证&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_16.png" />
+                                                        <span>专利交易展示中心</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>专利交易展示中心</div>
+                                                        <a href="#">国家平台&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_71.png" />
+                                                        <span>中知深德</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>中知深德</div>
+                                                        <a href="#">国家平台&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_42.png" />
+                                                        <span>科技中心</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>科技中心</div>
+                                                        <a href="#">政策扶持&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                                 <div class="list-zcbh1-item">
+                                                    <div class="list-zcbh-1">
+                                                        <img src="images\homepage\logo_box\logo_normal2.png" />
+                                                        <span>促进中心</span>
+                                                    </div>
+                                                    <div class="list-zcbh-2">
+                                                        <div>促进中心</div>
+                                                        <a href="#">政策扶持&gt;&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-zcyy">
+                                        <div class="list-zcyy-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\ico-zcyy-1.png" />
+                                                <span>知产申请</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>知产申请</div>
+                                                <a href="#">专利申请&gt;&gt;</a>
+                                                <a href="#">商标注册&gt;&gt;</a>
+                                                <a href="#">版权申请&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcyy-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\ico-zcyy-2.png" />
+                                                <span>知产交易</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>知产交易</div>
+                                                <a href="#">知产评估&gt;&gt;</a>
+                                                <a href="#">知产认证&gt;&gt;</a>
+                                                <a href="#">知产确权&gt;&gt;</a>
+                                                <a href="#">专利交易&gt;&gt;</a>
+                                                <a href="#">商标交易&gt;&gt;</a>
+                                                <a href="#">版权交易&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcyy-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\ico-zcyy-3.png" />
+                                                <span>知产金融</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>知产金融</div>
+                                                <a href="#">知产基金&gt;&gt;</a>
+                                                <a href="#">知产质押&gt;&gt;</a>
+                                                <a href="#">知产孵化&gt;&gt;</a>
+                                                <a href="#">知产证券&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcyy-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\ico-zcyy-4.png" />
+                                                <span>知产托管</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>知产托管</div>
+                                                <a href="#">专利托管&gt;&gt;</a>
+                                                <a href="#">商标托管&gt;&gt;</a>
+                                                <a href="#">版权托管&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="list-zcyy-item">
+                                            <div class="list-zcbh-1">
+                                                <img src="images\homepage\ico-zcyy-5.png" />
+                                                <span>其他业务</span>
+                                            </div>
+                                            <div class="list-zcbh-2">
+                                                <div>其他业务</div>
+                                                <a href="#">知产培训&gt;&gt;</a>
+                                                <a href="#">知产预警&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <ul class="footer-txt">
+                                        <li>
+                                            <p>主办单位：深圳市南山区知识产权促进中心</p>
+                                            <p>地址：南山区河西路1819号深圳湾科技生态园B座3楼</p>
+                                            <p>承建单位：xx有限公司</p>
+                                        </li>
+                                        <li>
+                                            <p>技术支持电话：01010101</p>
+                                            <p>业务咨询电话：101010</p>
+                                            <p>邮箱：xx@xx.com</p>
+                                        </li>
+                                        <li>
+                                            <p>网站标识码：44000000000</p>
+                                            <p>网站备案号：粤ICP备0000000号-1</p>
+                                            <p>公安备案号：4400000000000</p>
+                                        </li>
+                                    </ul>
+                                </div>
+</body>
+
+</html>
